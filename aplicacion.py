@@ -56,7 +56,7 @@ def libros(request, response):
         response.text = rendered_html
         return response
 
-#RESERVA ¡TERMINAR MAÑANA!#
+#RESERVA#
 
 @app.ruta("/reserva", methods=['GET'])
 def reservar(request, response):
