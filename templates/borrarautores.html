@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Biblioteca Virtual</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Baja de autores</div>
+                    <div class="card-body">
+                        <form action="/borrarautores" method="get">
+                            <div class="form-group">
+                                <label for="idautor">ID autor:</label>
+                                <input type="text" class="form-control" name="idautor" id="idautor" placeholder="Ingrese el ID del autor a eliminar" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Eliminar</button>
+                            <a class="btn btn-primary btn-block" href="/libros">Volver a la lista de libros</a>
+                            <a class="btn btn-primary btn-block" href="/">Volver a la pagina principal</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
